@@ -1,0 +1,74 @@
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+    width: 1000px; /* Aumenta el ancho del cuerpo */
+    margin: 0 auto;
+    padding: 0;
+}
+
+.contenedor-encabezado {
+    display: flex;
+    background-color: darkblue;
+    height: 120px;
+    align-items: center; /* Alinea verticalmente el contenido */
+}
+
+.titulo {
+    margin-top: 0; /* Reducido el margen superior */
+    margin-left: 200px; /* Ajusta el margen izquierdo según sea necesario */
+}
+
+/* Estilos para el menú */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+ul li {
+    display: inline-block; /* Mostrar los elementos de la lista en línea */
+}
+
+ul li:last-child {
+    margin-right: 0; 
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 130%;
+    padding: 10px 20px;
+    background-color: skyblue;
+    color: white;
+}
+
+/* Cambiar el color de fondo al pasar el mouse */
+ul li a:hover {
+    background-color: #555;
+}
+
+.contenedor-separador {
+    display: flex;
+    margin-top: 9px;
+    background-image: url('imatges/pattern.jpg');
+    background-repeat: repeat-x;
+    background-size: 100% auto; /* Ajusta la imagen horizontalmente */
+    height: 100px;
+}
+
+.contenedor-img-central{
+    background-image: url('imatges/fotofrontal.jpg');
+    background-repeat: repeat-x;
+    background-size: 100% auto;
+    height: 300px;
+
+}
+
+.notas{
+   
+}
+
+.fondo-gris{
+    background-color: rgb(158, 156, 156);
+    height: 300px;
+}
