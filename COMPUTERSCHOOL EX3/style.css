@@ -1,0 +1,191 @@
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+    width: 1000px; /* Aumenta el ancho del cuerpo */
+    
+}
+
+.contenedor-encabezado {
+    display: flex;
+    background-color: darkblue;
+    height: 120px;
+   
+}
+
+.contenedor-separador {
+    display: flex;
+    background-image: url('imatges/pattern.jpg');
+    height: 100px;
+    margin-top: 10px;
+    border: 1px dashed black;
+}
+
+.contenedor-img-central{
+    display: flex;
+    height: 300px;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+}
+.contenedor-img-central img{
+    width: 1000px;
+}
+
+.titulo {
+    position: absolute;
+    display: block;
+    height: 40px;
+    top: 40px;
+    margin: 0;
+    font-size: 26px;
+    color: white;
+    left: 500px;
+}
+.subtitulo{
+    position: absolute;
+    display: block;
+    left: 540px;
+    top: 70px;
+    margin: 0;
+    height: 30px;
+    color: white;
+    
+    
+
+}
+
+/* Estilos para el menú */
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+ul li {
+
+    display: inline; /* Mostrar los elementos de la lista en línea */
+    margin-left: 2px;
+}
+
+
+
+ul li a {
+    text-decoration: none;
+    font-size: 130%;
+    padding: 10px 20px;
+    background-color: skyblue;
+    color: white;
+}
+
+/* Cambiar el color de fondo al pasar el mouse */
+ul li a:hover {
+    background-color: #555;
+}
+
+
+
+.titulo-grades {
+    flex-direction: column; /* si no el texto se me quedaba horizontalmente */
+    display: flex;
+    width: 1000px;
+    height: 280px;
+    text-align: center;
+    background: #c7c5c5;
+    border: 1px dashed black
+}
+
+
+.notas {
+    width: 1000px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.the-grades {
+    text-decoration: underline;
+    height: 30px;
+    display: block;
+    
+}
+table {
+    width: 400px;
+    height: 140px;
+    border-collapse: collapse;
+    border: 1px solid grey;
+    
+}
+
+
+
+tr:nth-child(even){
+    background-color: grey;
+}
+
+tr:nth-last-child(odd){
+    background-color: #c7c5c5;
+}
+
+th{
+    border-bottom: solid 2px black;
+    background-color:rgb(110, 73, 141);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contenedor-general-fotos {
+    display: flex;
+    width: 1000px;
+    height: 300px;
+    border: 1px dashed black;
+    opacity: 50%;
+    justify-content: space-between;
+}
+
+.foto {
+    display: flex;
+    flex-direction: column; /* si no el texto se me quedaba horizontalmente, igual que en la linea 93*/
+    align-items: center; 
+    width: 250px;
+    border-right: 1px solid black;
+}
+
+.foto img {
+    width: 100%;
+    height: auto; 
+}
+
+h3 {
+    text-align: center;
+    
+}
+
+.foto h3 {
+    margin-top: 10px; 
+    text-align: center;
+    font-size: 16px; 
+    color: black; 
+}
+
+.footer{
+    height: 100px;
+    background: darkblue;
+}
+
+.top-left{
+    margin-left: 5px;
+    color: white;
+}
+.bottom-right{
+    color: white;
+    margin-top: 65px;
+    margin-left: 800px;
+}
+
+
