@@ -1,0 +1,20 @@
+// button 
+@use "@material/button/styles";
+@use "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/tab-bar/mdc-tab-bar";
+@use "@material/tab-scroller/mdc-tab-scroller";
+@use "@material/tab-indicator/mdc-tab-indicator";
+@use "@material/tab/mdc-tab";
+@use "@material/layout-grid/mdc-layout-grid";
+@use "@material/card";
+
+@include card.core-styles;
+
+body {
+    background-image: url("../img/background.png");
+  }
+  
+  .colum-flex{
+  flex-direction: column;
+  }
+
