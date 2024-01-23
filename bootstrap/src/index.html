@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<body class="container">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary mx-auto p-2">
+    <div class="container" >
+        <img src="images/logocifp.png" alt="borja">    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cursos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">FPB</a></li>
+              <li><a class="dropdown-item" href="#">CFGM</a></li>
+              <li><a class="dropdown-item" href="#">CFGS</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+        <button class="btn btn-warning">Notificaciones</button>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="images/estudiante.jpeg" class="d-block w-100 my-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Label Estudiante 1</h5>
+          <p>P estudiante 1</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="images/estudiante2.jpg" class="d-block w-100 my-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Label Estudiante 2</h5>
+          <p>P estudiante 2</p>
+        </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- AQUI VAN TODAS LAS CARDS+LABELS-->
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card mb-3 mb-sm-0">
+        <img src="images/erasmus.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Prueba de nivel de ingles</h5>
+          <p class="card-text">Resultados de la prueba de nivel de inglés para la selcción de alumnos de Eramus</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card mb-3 mb-sm-0">
+        <img src="images/ciber.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Lista definitiva para el curso de especializacion de Ciberseguridad</h5>
+          <p class="card-text">Este año han quedado fuera varios candidatos debido a la demanda</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Mañanas.</li>
+            <li class="list-group-item">Tardes.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card mb-3 mb-sm-0">
+        <img src="images/torrada.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Torrada San Valentin</h5>
+          <p class="card-text">Todo el instituto vendrá a divertirse.</p>
+          <a href="#" class="btn btn-danger">Leer mas</a>
+        </div>
+      </div>
+    </div>
+
+  <!-- Tabla-->
+  <table class="table ">
+    <thead class="table-info">
+      <tr >
+        <th>Usuario</th>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Rol</th>
+        <td></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>alexp01</td>
+        <td>Alex</td>
+        <td>Pons</td>
+        <td>Profesor</td>
+        <td>
+          <!-- MODAL PARA BOTON 1 Y 2-->
+          <!-- MODAL 1 y 2-->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Agregar Usuario</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Formulario para ingresar datos del usuario -->
+                  <form>
+                    <div class="form-group">
+                      <label for="usuario">Usuario</label>
+                      <input type="text" class="form-control" id="usuario" placeholder="Ingrese el nombre de usuario">
+                    </div>
+                    <div class="form-group">
+                      <label for="nombre">Nombre</label>
+                      <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre">
+                    </div>
+                    <div class="form-group">
+                      <label for="apellidos">Apellidos</label>
+                      <input type="text" class="form-control" id="apellidos" placeholder="Ingrese los apellidos">
+                    </div>
+                    <div class="form-group">
+                      <label for="rol">Rol</label>
+                      <input type="text" class="form-control" id="rol" placeholder="Ingrese el rol">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MODAL PARA TERCER BOTON-->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <P>¿¡Estas seguro de eliminar este usuario!?</P>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-primary">ELIMINAR</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="bi bi-person-fill-add"></i>
+          </button>
+          
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="bi bi-person-fill-gear"></i>
+          </button>
+          <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <i class="bi bi-person-fill-gear"></i>
+          </button>
+
+
+          
+          
+
+          
+
+
+        </td>
+      </tr>
+      <tr>
+        <td>pept</td>
+        <td>Pep</td>
+        <td>Torrens</td>
+        <td>Estudiante</td>
+        <td>
+          <button type="button" class="btn btn-primary btn-sm">
+            <i class="bi bi-person-fill-add"></i>
+          </button>
+          <button type="button" class="btn btn-secondary btn-sm">
+            <i class="bi bi-person-fill-gear"></i>
+          </button>
+          <button type="button" class="btn btn-info btn-sm">
+            <i class="bi bi-person-fill-gear"></i>
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>juanmarquez</td>
+        <td>Juan</td>
+        <td>Marquez</td>
+        <td>Estudiante</td>
+        <td>
+          <button type="button" class="btn btn-primary btn-sm">
+            <i class="bi bi-person-fill-add"></i>
+          </button>
+          <button type="button" class="btn btn-secondary btn-sm">
+            <i class="bi bi-person-fill-gear"></i>
+          </button>
+          <button type="button" class="btn btn-info btn-sm">
+            <i class="bi bi-person-fill-gear"></i>
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Adri328</td>
+        <td>Adrian</td>
+        <td>Aguilar</td>
+        <td>Estudiante</td>
+        <td>
+          <button type="button" class="btn btn-primary btn-sm">
+            <i class="bi bi-person-fill-add"></i>
+          </button>
+          <button type="button" class="btn btn-secondary btn-sm">
+            <i class="bi bi-person-fill-gear"></i>
+          </button>
+          <button type="button" class="btn btn-info btn-sm">
+            <i class="bi bi-person-fill-gear"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
